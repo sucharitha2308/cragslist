@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Subjects</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function highlightToday() {
+            const today = new Date();
+            const todayDate = today.getDate();
+            const cells = document.querySelectorAll('td');
+
+            cells.forEach(cell => {
+                if (parseInt(cell.innerText) === todayDate) {
+                    cell.classList.add('today');
+                } else {
+                    cell.classList.remove('today');
+                }
+            });
+        }
+
+        window.onload = highlightToday;
+    </script>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="https://goo.gl/maps/UVk94WhrCH9moxp68" target="_blank">SRM University AP</a>
+    </div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="calendar">
+                <h3>February 2025</h3>
+                <table>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="semester-section">
+                <h3>Semester 1</h3>
+                <ul>
+                    <li><a href="#">AEC 101: ART OF LISTENING, SPEAKING, AND READING SKILLS</a></li>
+                    <li><a href="#">CSE 101: FUNDAMENTALS OF COMPUTING AND PROGRAMMING IN C</a></li>
+                    <li><a href="#">FIC 101: EMERGING TECHNOLOGIES</a></li>
+                    <li><a href="#">FIC 102: ENGINEERING PHYSICS</a></li>
+                    <li><a href="#">FIC 103: CALCULUS FOR ENGINEERS</a></li>
+                    <li><a href="#">SEC 101: ANALYTICAL REASONING AND APTITUDE SKILLS</a></li>
+                    <li><a href="#">VAC 102: UNIVERSAL HUMAN VALUES AND ETHICS</a></li>
+                </ul>
+            </div>
+            <div class="semester-section">
+                <h3>Semester 2</h3>
+                <ul>
+                    <li><a href="#">AEG 107: EFFECTIVE WRITING AND PRESENTATION SKILLS</a></li>
+                    <li><a href="#">CSE 102: DATA STRUCTURES</a></li>
+                    <li><a href="#">FIC 105: PRINCIPLES OF ECONOMICS AND MANAGEMENT</a></li>
+                    <li><a href="#">FIC 112: LINEAR ALGEBRA AND DIFFERENTIAL EQUATIONS</a></li>
+                    <li><a href="#">FIG 120: FOUNDATIONS OF ELECTRICAL AND ELECTRONICS ENGINEERING</a></li>
+                    <li><a href="#">SEC 103: ENTERPRENEURIAL MINDSET</a></li>
+                    <li><a href="#">VAC 102: ENVIRONMENTAL SCIENCE</a></li>
+                </ul>
+            </div>
+            <div class="semester-section">
+                <h3>Semester 3</h3>
+                <ul>
+                  
+                            <li><a href="#">SEC 103: PROBLEM SOLVING SKILLS</a></li>
+                            <li><a href="#">VAC 101: CODING SKILLS</a></li>
+                            <li><a href="#">AEC 100: OOPS WITH C++</a></li>
+                            <li><a href="#">CSE 201: DISCRETE MATHEMATICS</a></li>
+                            <li><a href="#">CSE 202: DESIGN AND ANALYSIS OF ALGORITHMS</a></li>
+                            <li><a href="#">CSE 205: DIGITAL ELECTRONICS</a></li>
+                            <li><a href="#">BASICS FOR STOCK MARKET TRADING</a></li>
+                        </ul>
+                    </div>
+                    <div class="semester-section">
+                        <h3>Semester 4</h3>
+                        <ul>
+                            <li><a href="#">AEC 104: CREATIVITY AND CRITICAL THINKING SKILLS</a></li>
+                            <li><a href="#">CSE 205: HANDS ON WITH PYTHON</a></li>
+                            <li><a href="#">CSE 206: CODING SKILLS - II</a></li>
+                            <li><a href="#">CSE 208: PROBABILITY AND STATISTICS</a></li>
+                            <li><a href="#">CSE 209: DATABASE MANAGEMENT SYSTEMS</a></li>
+                            <li><a href="#">CSE 210: WEB TECHNOLOGY</a></li>
+                            <li><a href="#">POL 242: PUBLIC POLICY AND E-GOVERNANCE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+.top-bar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #0305EE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.left-panel {
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-right: 2px solid #ccc;
+}
+
+.right-panel {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+.semester-section {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.semester-section h3 {
+    margin: 0 0 10px;
+    color: #0305EE;
+    font-size: 18px;
+}
+
+.semester-section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.semester-section ul li {
+    margin: 5px 0;
+}
+
+.semester-section ul li a {
+    text-decoration: none;
+    color: #0305EE;
+    transition: color 0.3s;
+}
+
+.semester-section ul li a:hover {
+    color:purple;
+    text-decoration: underline;
+}
+
+.calendar {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar h3 {
+    text-align: center;
+    color: #0305EE;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #0305EE;
+}
+
+.today {
+    background-color: #ffeb3b;
+    font-weight: bold;
+}
